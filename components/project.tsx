@@ -55,7 +55,6 @@ export default function Project({
 
         <Image
           src="/1.jpeg"
-          layout="responsive"
           width="192"
           height="192"
           alt="Project I worked on"
