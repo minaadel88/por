@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
-import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
+import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Projects() {
@@ -14,10 +13,7 @@ export default function Projects() {
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
-            <Project key={index} {...project} />
-            
-          </React.Fragment>
+          <Project key={index} {...project} />
         ))}
       </div>
     </section>
