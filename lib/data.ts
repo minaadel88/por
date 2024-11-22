@@ -15,7 +15,6 @@ export default function Project({
   link,
 }: ProjectProps) {
   const divRef = useRef<HTMLDivElement>(null); // Ref for the div element
-  const anchorRef = useRef<HTMLAnchorElement>(null); // Ref for the anchor element
   const { scrollYProgress } = useScroll({
     target: divRef,
     offset: ["0 1", "1.33 1"],
@@ -39,8 +38,7 @@ export default function Project({
             <a 
               href={link} 
               target="_blank" 
-              rel="noopener noreferrer" 
-              ref={anchorRef} // Ref assigned to anchor element
+              rel="noopener noreferrer"
             >
               {title}
             </a>
