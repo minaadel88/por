@@ -27,8 +27,8 @@ export const links = [
   {
     name: "Contact",
     hash: "#contact",
-  },
-] as const;
+  }
+];
 
 export const experiencesData = [
   {
@@ -53,8 +53,8 @@ export const experiencesData = [
       "I am currently working as an accountant, where my role involves reviewing maintenance contracts and preparing financial reports for the payment of invoices related to those contracts. I also analyze data for the contracted companies to support timely decision-making.",
     icon: React.createElement(FaReact),
     date: "2015 - present",
-  },
-] as const;
+  }
+];
 
 export const projectsData = [
   {
@@ -72,9 +72,8 @@ export const projectsData = [
     tags: ["Vite.js", "Firebase", "YouTube API", "TypeScript"],
     imageUrl: "/2.jpg", 
     link: "https://kero-player.vercel.app",
-  },
-  
-] as const;
+  }
+];
 
 export const skillsData = [
   "HTML",
@@ -87,5 +86,5 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "Redux",
-  "Framer Motion",
-] as const;
+  "Framer Motion"
+];
