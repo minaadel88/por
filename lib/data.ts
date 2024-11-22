@@ -1,5 +1,4 @@
 "use client";
-
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
@@ -14,9 +13,10 @@ export default function Project({
   imageUrl,
   link,
 }: ProjectProps) {
-  const divRef = useRef<HTMLDivElement>(null); // Ref for the div element
+  const sectionRef = useRef<HTMLDivElement>(null);
+  
   const { scrollYProgress } = useScroll({
-    target: divRef,
+    target: sectionRef,
     offset: ["0 1", "1.33 1"],
   });
   
@@ -25,7 +25,7 @@ export default function Project({
 
   return (
     <motion.div
-      ref={divRef} // Ref assigned to motion.div
+      ref={sectionRef}
       style={{
         scale: scaleProgress,
         opacity: opacityProgress,
@@ -57,9 +57,8 @@ export default function Project({
             ))}
           </ul>
         </div>
-
         <Image
-          src={imageUrl} // Use dynamic image URL
+          src={imageUrl}
           width={192}
           height={192}
           alt="Project Image"
