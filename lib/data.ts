@@ -65,6 +65,14 @@ export const projectsData = [
     imageUrl: "/1.jpeg",
     link:"https://first-project-psi-silk.vercel.app/",
   },
+  {
+    title: "Kero Player",
+    description:
+      "A modern audio streaming app built with Vite.js, Firebase, and the YouTube API.",
+    tags: ["Vite.js", "Firebase", "YouTube API", "TypeScript"],
+    imageUrl: "/2.jpg", 
+    link: "https://kero-player.vercel.app",
+  },
   
 ] as const;
 
