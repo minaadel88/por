@@ -14,7 +14,7 @@ export default function Project({
   imageUrl,
   link,
 }: ProjectProps) {
-  const ref = useRef<HTMLDivElement>(null); // ref is for the div element
+  const ref = useRef<HTMLDivElement>(null); // Use the ref for the div element
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
@@ -24,7 +24,7 @@ export default function Project({
 
   return (
     <motion.div
-      ref={ref} // Assign ref to the div element
+      ref={ref} // Ref assigned to motion.div, not the anchor <a> element
       style={{
         scale: scaleProgress,
         opacity: opacityProgress,
@@ -54,7 +54,7 @@ export default function Project({
         </div>
 
         <Image
-          src={imageUrl} // Dynamic image path
+          src={imageUrl} // Use dynamic image URL
           width={192}
           height={192}
           alt="Project Image"
