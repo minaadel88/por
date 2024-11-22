@@ -1,9 +1,9 @@
 "use client";
 
 import { useRef } from "react";
-import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { projectsData } from "@/lib/data";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -60,9 +60,9 @@ export default function Project({
         </div>
         <Image
           src={imageUrl}
-          width={192}
-          height={192}
-          alt="Project Image"
+          alt={title}
+          width={500}
+          height={300}
           quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
         />
