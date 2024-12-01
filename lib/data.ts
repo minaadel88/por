@@ -71,7 +71,7 @@ export const projectsData = [
       "A modern audio streaming app built with Vite.js, Firebase, and the YouTube API.",
     tags: ["Vite.js", "Firebase", "YouTube API", "TypeScript"],
     imageUrl: "/2.jpg", 
-    link: "https://kero-player.vercel.app",
+    link: "https://audio-player-nu-seven.vercel.app/",
   }
 ];
 
