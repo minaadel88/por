@@ -60,19 +60,27 @@ export const projectsData = [
   {
     title: "Religious application",
     description:
-"This is my first application, where I tried to implement what I learned, such as routing, navigation between pages, adding text features, formatting text, and including a video for each text section.",
-    tags: ["React", "Next.js",  "Tailwind"],
+      "This is my first application, where I tried to implement what I learned, such as routing, navigation between pages, adding text features, formatting text, and including a video for each text section.",
+    tags: ["React", "Next.js", "Tailwind"],
     imageUrl: "/1.jpeg",
-    link:"https://first-project-psi-silk.vercel.app/",
+    link: "https://first-project-psi-silk.vercel.app/",
   },
   {
     title: "Kero Player",
     description:
       "A modern audio streaming app built with Vite.js, Firebase, and the YouTube API.",
     tags: ["Vite.js", "Firebase", "YouTube API", "TypeScript"],
-    imageUrl: "/2.jpg", 
+    imageUrl: "/2.jpg",
     link: "https://audio-player-nu-seven.vercel.app/",
-  }
+  },
+  {
+    title: "E-Commerce App",
+    description:
+      "This is a React-based e-commerce application that integrates with the Fake Store API to display products, handle shopping cart functionality, and manage user interactions. The app features a clean and modern design, with a 5% discount popup and dynamic cart updates.",
+    tags: ["React", "Vite.js", "Fake Store API", "Tailwind", "JavaScript"],
+    imageUrl: "/3.jpg", 
+    link: "https://e-commerce-app-chi-ten.vercel.app/",
+  },
 ];
 
 export const skillsData = [
