@@ -47,10 +47,10 @@ export const experiencesData = [
     date: "2013 - 2015",
   },
   {
-    title: "Accountant at Egyptian Ministry of Interior",
+    title: "Frontend Developer at Egyptian Ministry of Interior",
     location: "cairo, EG",
     description:
-      "I am currently working as an accountant, where my role involves reviewing maintenance contracts and preparing financial reports for the payment of invoices related to those contracts. I also analyze data for the contracted companies to support timely decision-making.",
+      " Developed internal web applications using React and Next.js, improving user experience and system efficiency. Collaborated with cross-functional teams to design user-friendly, secure interfaces. Optimized applications for speed and scalability using server-side rendering and state management. Integrated APIs for real-time data updates and reporting.",
     icon: React.createElement(FaReact),
     date: "2015 - present",
   }
