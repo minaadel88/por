@@ -55,6 +55,7 @@ export default function Project({
           </ul>
         </div>
 
+        {/* Wrapper div for image */}
         <div className="relative sm:w-[50%] w-full h-full sm:h-[15rem]">
           <Image
             src={imageUrl}
@@ -62,7 +63,7 @@ export default function Project({
             width={500}
             height={300}
             quality={95}
-            className="w-full h-full object-cover rounded-t-lg shadow-2xl transition-all transform group-hover:scale-[1.04] group-hover:translate-x-3 group-hover:translate-y-3 group-hover:rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2"
+            className="w-full h-full max-w-full object-cover rounded-t-lg shadow-2xl transition-all transform group-hover:scale-[1.04] group-hover:translate-x-3 group-hover:translate-y-3 group-hover:rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2"
           />
         </div>
       </section>
