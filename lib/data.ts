@@ -64,6 +64,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "Tailwind"],
     imageUrl: "/1.jpeg",
     link: "https://first-project-psi-silk.vercel.app/",
+    imageClasses: "rounded-lg w-full h-auto object-cover",
   },
   {
     title: "Kero Player",
@@ -72,16 +73,19 @@ export const projectsData = [
     tags: ["Vite.js", "Firebase", "YouTube API", "TypeScript"],
     imageUrl: "/2.jpg",
     link: "https://audio-player-nu-seven.vercel.app/",
+    imageClasses: "rounded-lg w-full h-auto object-cover",
   },
   {
     title: "E-Commerce App",
     description:
       "This is a React-based e-commerce application that integrates with the Fake Store API to display products, handle shopping cart functionality, and manage user interactions. The app features a clean and modern design, with a 5% discount popup and dynamic cart updates.",
     tags: ["React", "Vite.js", "Fake Store API", "Tailwind", "JavaScript"],
-    imageUrl: "/3.jpg", 
+    imageUrl: "/3.jpg",
     link: "https://e-commerce-app-chi-ten.vercel.app/",
+    imageClasses: "rounded-lg w-full h-auto object-cover",
   },
 ];
+
 
 export const skillsData = [
   "HTML",
