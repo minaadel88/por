@@ -15,12 +15,12 @@ export default function Project({
   link,
 }: ProjectProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
-  
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["0 1", "1.33 1"],
   });
-  
+
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
@@ -34,13 +34,9 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] relative z-10">
           <h3 className="text-2xl font-semibold">
-            <a 
-              href={link} 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
+            <a href={link} target="_blank" rel="noopener noreferrer">
               {title}
             </a>
           </h3>
@@ -58,15 +54,17 @@ export default function Project({
             ))}
           </ul>
         </div>
-  <Image
-  src={imageUrl}
-  alt={title}
-  width={500}
-  height={300}
-  quality={95}
-  className="absolute top-8 right-0 w-full max-w-sm rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 sm:right-[initial] sm:-left-40 sm:w-[28.25rem] object-cover"
-/>
 
+        <div className="relative sm:w-[50%] w-full h-full sm:h-[15rem]">
+          <Image
+            src={imageUrl}
+            alt={title}
+            width={500}
+            height={300}
+            quality={95}
+            className="w-full h-full object-cover rounded-t-lg shadow-2xl transition-all transform group-hover:scale-[1.04] group-hover:translate-x-3 group-hover:translate-y-3 group-hover:rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2"
+          />
+        </div>
       </section>
     </motion.div>
   );
