@@ -13,6 +13,7 @@ export default function Project({
   tags,
   imageUrl,
   link,
+  imageClasses,
 }: ProjectProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -65,7 +66,7 @@ export default function Project({
             width={500}
             height={300}
             quality={95}
-            className="w-full h-full object-cover rounded-t-lg shadow-2xl transition-all transform group-hover:scale-[1.04] group-hover:translate-x-3 group-hover:translate-y-3 group-hover:rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2"
+            className={`${imageClasses} w-full h-full object-cover`}
           />
         </div>
       </section>
