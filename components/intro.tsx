@@ -58,16 +58,26 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <span className="font-bold">Hello, I'm MINA ADEL.</span> I'm a{" "}
-        <span className="font-bold"> Junior Front-end developer</span> with{" "}
-        <span className="font-bold">6 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React ,Vite.js, Typescript and Next.js </span>.
-      </motion.h1>
+  className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+  initial={{ opacity: 0, y: 100 }}
+  animate={{ opacity: 1, y: 0 }}
+>
+  <span className="font-bold">Hi, I'm Mina Adel.</span> I’m a{" "}
+  <span className="font-bold">dedicated Front-End Developer</span> with{" "}
+  <span className="font-bold">6 years of experience</span> in crafting dynamic, responsive, 
+  and visually engaging web applications. My expertise lies in{" "}
+  <span className="underline">React, Vite.js, TypeScript, and Next.js</span>, enabling me 
+  to deliver efficient and scalable solutions.
+  <br />
+  <br />
+  I take pride in transforming ideas into functional and intuitive digital experiences, 
+  focusing on <span className="font-medium">performance optimization</span>,{" "}
+  <span className="font-medium">clean code</span>, and{" "}
+  <span className="font-medium">seamless user interaction</span>. My passion lies in 
+  solving challenges, staying ahead of industry trends, and continuously enhancing my 
+  skills to build impactful and innovative web solutions.
+</motion.h1>
+
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
