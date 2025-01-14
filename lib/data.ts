@@ -64,7 +64,6 @@ export const projectsData = [
     tags: ["React", "Next.js", "Tailwind"],
     imageUrl: "/1.jpeg",
     link: "https://first-project-psi-silk.vercel.app/",
-    imageClasses: "rounded-lg w-full h-auto object-cover",
   },
   {
     title: "Kero Player",
